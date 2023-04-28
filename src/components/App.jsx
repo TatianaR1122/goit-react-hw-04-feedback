@@ -29,8 +29,7 @@ export default function App() {
   const total = good + neutral + bad;
 
   const countPositivePercentage = () => {
-    const result = total;
-    const totalPercentage = (good * 100) / result || 0;
+    const totalPercentage = (good * 100) / total || 0;
     return Math.round(totalPercentage);
   };
 
